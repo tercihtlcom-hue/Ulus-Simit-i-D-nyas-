@@ -923,21 +923,6 @@
         margin-top: 4px;
       }
       .m-w {
-        display: grid;
-        grid-template-columns: 1fr 260px;
-        gap: 2rem;
-        align-items: start;
-      }
-      .m-side {
-        border-radius: 20px;
-        overflow: hidden;
-        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
-        position: sticky;
-        top: 100px;
-      }
-      .m-side img {
-        width: 100%;
-        height: auto;
         display: block;
       }
       .m-full {
@@ -1362,9 +1347,6 @@
         }
         .m-w {
           grid-template-columns: 1fr;
-        }
-        .m-side {
-          display: none;
         }
         .offer-img {
           transform: rotate(0);
@@ -3989,16 +3971,7 @@
                   </div>
                 </div>
               </div>
-            </div><div class="m-side rev" aria-hidden="true">
-            <img
-              src="hero.jpg"
-              alt=""
-              id="msi"
-              width="260"
-              height="400"
-              loading="lazy"
-              style="width: 100%; height: auto"
-            />
+            </div>
           </div>
         </div>
         <picture
@@ -4469,14 +4442,6 @@
         document
           .querySelectorAll(".m-p")
           .forEach((p, j) => p.classList.toggle("on", j === i));
-        const a = document.querySelector(".m-p.on");
-        if (a) {
-          const img = a.dataset.img;
-          if (img) {
-            const s = document.getElementById("msi");
-            if (s) s.src = img;
-          }
-        }
         document.getElementById("m").scrollIntoView({ behavior: "smooth" });
       }
       function sc(i) {
