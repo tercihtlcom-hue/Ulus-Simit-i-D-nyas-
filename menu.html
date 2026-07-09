@@ -1,0 +1,2395 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simitçi Dünyası Ulus | Dijital Menü</title>
+    <meta
+      name="description"
+      content="Simitçi Dünyası Ulus'un dijital menüsü. Fırın ürünleri, kahvaltılar, tostlar, salatalar, gözlemeler, ana yemekler, burgerler, tatlılar ve içecekler."
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#c41e3a" />
+    <link rel="canonical" href="https://www.simitcidunyasiulus.com/menu.html" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
+    <link rel="icon" href="logo.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Simitçi Dünyası Ulus" />
+    <meta property="og:title" content="Simitçi Dünyası Ulus | Dijital Menü" />
+    <meta
+      property="og:description"
+      content="Fırın ürünleri, kahvaltılar, tostlar, salatalar, gözlemeler, ana yemekler, burgerler, tatlılar ve içecekler."
+    />
+    <meta
+      property="og:image"
+      content="https://www.simitcidunyasiulus.com/menu.jpg"
+    />
+    <meta
+      property="og:url"
+      content="https://www.simitcidunyasiulus.com/menu.html"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Simitçi Dünyası Ulus | Dijital Menü" />
+    <meta
+      name="twitter:description"
+      content="Fırın ürünleri, kahvaltılar, tostlar, salatalar, gözlemeler, ana yemekler, burgerler, tatlılar ve içecekler."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.simitcidunyasiulus.com/menu.jpg"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Menu",
+        "name": "Simitçi Dünyası Ulus Menü",
+        "url": "https://www.simitcidunyasiulus.com/menu.html",
+        "hasMenuItem": [
+          { "@type": "MenuItem", "name": "Sade Simit" },
+          { "@type": "MenuItem", "name": "Serpme Kahvaltı" },
+          { "@type": "MenuItem", "name": "Ayvalık Tostu" }
+        ]
+      }
+    </script>
+    <style>
+      *,
+      *::before,
+      *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      :root {
+        --gold: #d4a84b;
+        --gold-light: #f5d78e;
+        --gold-dark: #b8860b;
+        --red: #c41e3a;
+        --red-dark: #8b0000;
+        --brown: #5c3a1e;
+        --brown-dark: #3d2b1f;
+        --cream: #fff8e7;
+        --white: #ffffff;
+        --black: #1a0a00;
+      }
+      html {
+        scroll-behavior: smooth;
+        font-size: 18px;
+      }
+      body {
+        font-family: "Inter", sans-serif;
+        color: var(--black);
+        background: var(--cream);
+        overflow-x: hidden;
+      }
+      .nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 1000;
+        background: rgba(26, 10, 0, 0.97);
+        backdrop-filter: blur(20px);
+      }
+      .logo {
+        font-family: "Playfair Display", serif;
+        font-size: 1.5rem;
+        font-weight: 800;
+        color: var(--gold);
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .logo img {
+        height: 42px;
+        width: auto;
+        display: block;
+      }
+      .nav-links {
+        display: flex;
+        gap: 2rem;
+        list-style: none;
+      }
+      .nav-links a {
+        color: var(--white);
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 0.85rem;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        transition: color 0.3s;
+      }
+      .nav-links a:hover {
+        color: var(--gold-light);
+      }
+      .mob-btn {
+        display: none;
+        background: none;
+        border: none;
+        color: var(--white);
+        font-size: 1.5rem;
+        cursor: pointer;
+      }
+      section {
+        padding: 90px 20px;
+        position: relative;
+        overflow: hidden;
+      }
+      .cont {
+        max-width: 1300px;
+        margin: 0 auto;
+        padding: 0 2rem;
+      }
+      .sec-h {
+        text-align: center;
+        margin-bottom: 3.5rem;
+      }
+      .sec-label {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 0.85rem;
+        font-weight: 600;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        color: var(--gold-dark);
+        margin-bottom: 1rem;
+      }
+      .sec-title {
+        font-family: "Playfair Display", serif;
+        font-size: clamp(2.4rem, 5.5vw, 3.6rem);
+        font-weight: 700;
+        color: var(--brown);
+        margin-bottom: 1rem;
+      }
+      .sec-sub {
+        color: #555;
+        max-width: 650px;
+        margin: 0 auto;
+        font-size: 1.2rem;
+        line-height: 1.8;
+      }
+      .sec-div {
+        width: 80px;
+        height: 4px;
+        background: linear-gradient(90deg, var(--gold), var(--red));
+        margin: 1.5rem auto;
+        border-radius: 2px;
+      }
+      .rev {
+        opacity: 0;
+        transform: translateY(40px);
+        transition:
+          opacity 0.6s,
+          transform 0.6s;
+      }
+      .rev.on {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      .mp {
+        background: var(--cream);
+        padding-top: 120px;
+      }
+      .m-tabs {
+        display: flex;
+        justify-content: center;
+        gap: 0.5rem;
+        margin-bottom: 3rem;
+        flex-wrap: wrap;
+      }
+      .m-tab {
+        padding: 14px 28px;
+        border-radius: 50px;
+        border: 2px solid rgba(212, 168, 75, 0.3);
+        background: var(--white);
+        color: var(--brown);
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s;
+        font-size: 1rem;
+      }
+      .m-tab:hover,
+      .m-tab.on {
+        background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+        color: var(--black);
+        border-color: var(--gold);
+        box-shadow: 0 5px 20px rgba(212, 168, 75, 0.3);
+      }
+      .m-p {
+        display: none;
+        content-visibility: auto;
+        animation: fi 0.3s ease;
+      }
+      .m-p.on {
+        display: block;
+      }
+      @keyframes fi {
+        from {
+          opacity: 0;
+          transform: translateY(15px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .mc-title {
+        font-family: "Playfair Display", serif;
+        font-size: 1.8rem;
+        color: var(--red);
+        margin-bottom: 1.5rem;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .mc-title svg {
+        width: 24px;
+        height: 24px;
+        fill: var(--gold);
+      }
+      .m-items {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1rem;
+      }
+      .m-it {
+        background: var(--white);
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
+        transition: all 0.3s;
+        border-top: 4px solid var(--gold);
+        cursor: pointer;
+        contain: layout style paint;
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+      }
+      .m-it:hover {
+        transform: translateY(-8px) scale(1.02);
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+        border-top-color: var(--red);
+      }
+      .m-visual {
+        height: 180px;
+        aspect-ratio: 16/9;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+      }
+      .m-visual img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+      .m-info {
+        padding: 1.2rem 1.5rem;
+      }
+      .m-name {
+        font-size: 1.15rem;
+        font-weight: 700;
+        color: var(--brown);
+      }
+      .m-desc {
+        font-size: 0.95rem;
+        color: #666;
+        margin-top: 4px;
+      }
+
+      .footer {
+        background: var(--black);
+        color: var(--white);
+        padding: 40px 20px;
+        text-align: center;
+      }
+      .footer .brand {
+        font-family: "Playfair Display", serif;
+        font-size: 1.6rem;
+        color: var(--gold);
+        margin-bottom: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+      }
+      .footer p {
+        font-size: 0.9rem;
+        opacity: 0.5;
+      }
+      .f-links {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        margin-top: 1.5rem;
+        flex-wrap: wrap;
+      }
+      .f-links a {
+        color: rgba(255, 255, 255, 0.4);
+        text-decoration: none;
+        font-size: 0.8rem;
+        transition: color 0.3s;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+      .f-links a:hover {
+        color: var(--gold);
+      }
+
+      .menu-modal {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.75);
+        z-index: 9999;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+      }
+      .menu-modal.on {
+        display: flex;
+      }
+      .menu-modal-content {
+        background: #fff;
+        border-radius: 16px;
+        overflow: hidden;
+        max-width: 480px;
+        width: 100%;
+        max-height: 90vh;
+        overflow-y: auto;
+        position: relative;
+        animation: mmPop 0.25s ease;
+      }
+      @keyframes mmPop {
+        from {
+          transform: scale(0.9);
+          opacity: 0;
+        }
+        to {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+      .menu-modal-close {
+        position: absolute;
+        top: 10px;
+        right: 14px;
+        font-size: 2rem;
+        line-height: 1;
+        color: #fff;
+        cursor: pointer;
+        z-index: 2;
+        text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+      }
+      .menu-modal-img {
+        width: 100%;
+        height: 320px;
+        overflow: hidden;
+      }
+      .menu-modal-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+      .menu-modal-info {
+        padding: 1.5rem;
+      }
+      .menu-modal-info h3 {
+        font-size: 1.4rem;
+        margin-bottom: 0.5rem;
+        color: var(--brown);
+        font-family: "Playfair Display", serif;
+      }
+      .menu-modal-info p {
+        font-size: 1rem;
+        color: #555;
+      }
+
+      .wbtn {
+        position: fixed;
+        bottom: 2rem;
+        right: 2rem;
+        width: 60px;
+        height: 60px;
+        background: linear-gradient(135deg, #25d366, #128c7e);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--white);
+        box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+        z-index: 999;
+        text-decoration: none;
+      }
+      .wbtn svg {
+        width: 32px;
+        height: 32px;
+        fill: currentColor;
+      }
+
+      @media (max-width: 768px) {
+        .nav-links {
+          display: none;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          width: 100%;
+          background: rgba(26, 10, 0, 0.97);
+          backdrop-filter: blur(20px);
+          flex-direction: column;
+          padding: 1.5rem;
+          gap: 1.5rem;
+        }
+        .nav-links.a {
+          display: flex;
+        }
+        .mob-btn {
+          display: block;
+        }
+        .m-items {
+          grid-template-columns: 1fr;
+        }
+        .m-visual {
+          height: 140px;
+          aspect-ratio: 16/9;
+        }
+        .menu-modal-img {
+          height: 220px;
+        }
+      }
+    </style>
+    <base target="_blank" />
+    <base target="_blank" />
+  </head>
+  <body>
+    <nav class="nav" id="nav">
+      <a href="index.html" class="logo">
+        <img
+          src="logo.png"
+          alt="Simitçi Dünyası Ulus Logo"
+          width="40"
+          height="26"
+        />Simitçi Dünyası
+      </a>
+      <button class="mob-btn" onclick="tg()" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z" />
+        </svg>
+      </button>
+      <ul class="nav-links" id="nl">
+        <li><a href="index.html">Anasayfa</a></li>
+        <li><a href="menu.html">Menü</a></li>
+        <li><a href="index.html#c">İletişim</a></li>
+      </ul>
+    </nav>
+
+    <section class="mp" id="m">
+      <div class="cont">
+        <div class="sec-h rev">
+          <span class="sec-label">DİJİTAL MENÜ</span>
+          <h1 class="sec-title">Lezzetleri Keşfedin</h1>
+          <div class="sec-div"></div>
+          <p class="sec-sub">
+            Gerçek Simitçi Dünyası menüsü. Taze, günlük ve uygun fiyatlı.
+          </p>
+        </div>
+
+        <div class="m-tabs rev">
+          <button class="m-tab on" onclick="sp(0)">Fırın</button>
+          <button class="m-tab" onclick="sp(1)">Kahvaltı</button>
+          <button class="m-tab" onclick="sp(2)">Tost</button>
+          <button class="m-tab" onclick="sp(3)">Salata</button>
+          <button class="m-tab" onclick="sp(4)">Gözleme</button>
+          <button class="m-tab" onclick="sp(5)">Yemek</button>
+          <button class="m-tab" onclick="sp(6)">Burger</button>
+          <button class="m-tab" onclick="sp(7)">Tatlı</button>
+          <button class="m-tab" onclick="sp(8)">Sıcak İçecek</button>
+          <button class="m-tab" onclick="sp(9)">Soğuk İçecek</button>
+        </div>
+
+        <!-- Fırın -->
+        <div class="m-p on" id="p0">
+          <div class="mc-title">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+              />
+            </svg>
+            Fırın Ürünleri
+          </div>
+          <div class="m-items">
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #cd853f, #8b4513)"
+              >
+                <img
+                  src="urunler/genel/ankara-simidi.webp"
+                  alt="ankara simidi"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Sade Simit / Ankara Simidi</div>
+                <div class="m-desc">Geleneksel, çıtır ve bol susamlı</div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #daa520, #b8860b)"
+              >
+                <img
+                  src="urunler/genel/susamli-simit.webp"
+                  alt="susamli simit"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Susamlı Simit</div>
+                <div class="m-desc">Sokak simidi lezzeti</div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #ffd700, #daa520)"
+              >
+                <img
+                  src="urunler/genel/kasarli-simit.webp"
+                  alt="kasarli simit"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Kaşarlı Simit</div>
+                <div class="m-desc">Eritme kaşar peyniri dolgulu</div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #556b2f, #2f4f4f)"
+              >
+                <img
+                  src="urunler/genel/kasarli-zeytinli-simit.webp"
+                  alt="kasarli zeytinli simit"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Kaşarlı Zeytinli Simit</div>
+                <div class="m-desc">Zeytin ve kaşar bir arada</div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #ff8c00, #ff6347)"
+              >
+                <img
+                  src="urunler/simit-tabaklari/simit-tabagi.webp"
+                  alt="simit tabagi"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Karışık Simit</div>
+                <div class="m-desc">Tüm lezzetler bir arada</div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #fffacd, #daa520)"
+              >
+                <img
+                  src="urunler/simit-arasi/simit-arasi-domates-peynir.webp"
+                  alt="simit arasi domates peynir"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Simit Arası Beyaz Peynir & Domates</div>
+                <div class="m-desc">Taze ve hafif</div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #dc143c, #ff6347)"
+              >
+                <img
+                  src="urunler/simit-arasi/simit-arasi-beyaz-peynirli-salamli.webp"
+                  alt="simit arasi beyaz peynirli salamli"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Simit Arası Beyaz Peynir & Salam</div>
+                <div class="m-desc">Salamlı simit keyfi</div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #f5deb3, #daa520)"
+              >
+                <img
+                  src="urunler/pogacalar/peynirli-pogaca.webp"
+                  alt="peynirli pogaca"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Peynirli Poğaça / Açma</div>
+                <div class="m-desc">Klasik, yumuşak hamurlu</div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #228b22, #32cd32)"
+              >
+                <img
+                  src="urunler/corekler/dereotlu-ev-coregi.webp"
+                  alt="dereotlu ev coregi"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Dereotlu Poğaça</div>
+                <div class="m-desc">Tuzlu atıştırmalık</div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #cd853f, #8b4513)"
+              >
+                <img
+                  src="urunler/borekler/kiymali-koyboregi.webp"
+                  alt="kiymali koyboregi"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Kıymalı / Patatesli Börek (Dilim)</div>
+                <div class="m-desc">Taze pişmiş, çıtır dilim</div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #f5deb3, #d2b48c)"
+              >
+                <img
+                  src="urunler/borekler/peynirli-su-boregi.webp"
+                  alt="peynirli su boregi"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Su Böreği (Dilim)</div>
+                <div class="m-desc">Yöresel lezzet, el açması tadında</div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #daa520, #cd853f)"
+              >
+                <img
+                  src="urunler/corekler/ay-coregi.webp"
+                  alt="ay coregi"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Kuru Kruvasan</div>
+                <div class="m-desc">Kıtır, tereyağlı</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kahvaltı -->
+        <div class="m-p" id="p1">
+          <div class="mc-title">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+              />
+            </svg>
+            Kahvaltılar
+          </div>
+          <div class="m-items">
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #ff8c00, #ff6347)"
+              >
+                <img
+                  src="urunler/kahvalti/simitcinin-kahvalti-tabagi.webp"
+                  alt="simitcinin kahvalti tabagi"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Simitçi'nin Kahvaltısı</div>
+                <div class="m-desc">Simit, peynir, zeytin, çay</div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #ffd700, #daa520)"
+              >
+                <img
+                  src="urunler/kahvalti/evdeki-kahvalti-tabagi.webp"
+                  alt="evdeki kahvalti tabagi"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Annemin Kahvaltısı</div>
+                <div class="m-desc">
+                  Beyaz peynir, kaşar, çeçil, tulum, bal, kaymak
+                </div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #ff6347, #ff4500)"
+              >
+                <img
+                  src="urunler/kahvalti/klasik-kahvalti-tabagi.webp"
+                  alt="klasik kahvalti tabagi"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Klasik Kahvaltı Tabağı</div>
+                <div class="m-desc">
+                  Peynir, zeytin, yumurta, domates, salatalık
+                </div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #daa520, #b8860b)"
+              >
+                <img
+                  src="urunler/kahvalti/tepsi-koy-kahvalti.webp"
+                  alt="tepsi koy kahvalti"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Serpme Kahvaltı (2 Kişilik)</div>
+                <div class="m-desc">
+                  Su böreği, 4 çeşit peynir, kaymak, nutella, salam, jambon,
+                  pankek, sınırsız çay
+                </div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #ffd700, #ff8c00)"
+              >
+                <img
+                  src="urunler/omletler/sade-omlet.webp"
+                  alt="sade omlet"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Sade Omlet</div>
+                <div class="m-desc">Tereyağında 3 adet yumurta</div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #ffd700, #daa520)"
+              >
+                <img
+                  src="urunler/omletler/kasar-peynirli-omlet.webp"
+                  alt="kasar peynirli omlet"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Kaşarlı Omlet</div>
+                <div class="m-desc">Bol kaşarlı omlet</div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #ff6347, #ff4500)"
+              >
+                <img
+                  src="urunler/menemenler-kategori/soganli-menemen.webp"
+                  alt="soganli menemen"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Menemen</div>
+                <div class="m-desc">Sade, kaşarlı veya sucuklu</div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #dc143c, #8b0000)"
+              >
+                <img
+                  src="urunler/sahanda-yumurtalar/sahanda-sucuklu-yumurta.webp"
+                  alt="sahanda sucuklu yumurta"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Sucuklu Yumurta</div>
+                <div class="m-desc">Sahanda sucuklu 2 adet yumurta</div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #ff8c00, #ff6347)"
+              >
+                <img
+                  src="urunler/sahanda-yumurtalar/sahanda-sutlu-yumurta.webp"
+                  alt="sahanda sutlu yumurta"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Sahanda Yumurta</div>
+                <div class="m-desc">
+                  Tereyağında 2 adet köy yumurtası, simit
+                </div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #fffacd, #f5deb3)"
+              >
+                <img
+                  src="urunler/sahanda-yumurtalar/sahanda-tereyagli-yumurta.webp"
+                  alt="sahanda tereyagli yumurta"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Haşlanmış Yumurta Tabağı</div>
+                <div class="m-desc">2 adet köy yumurtası, simit, tereyağı</div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #daa520, #cd853f)"
+              >
+                <img
+                  src="urunler/kahvalti/french-tostlu-kahvalti-tabagi.webp"
+                  alt="french tostlu kahvalti tabagi"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Yumurtalı Ekmek</div>
+                <div class="m-desc">
+                  Kızartılmış yumurtalı ekmek, labne, reçel
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tost -->
+        <div class="m-p" id="p2">
+          <div class="mc-title">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+              />
+            </svg>
+            Tostlar & Sandviçler
+          </div>
+          <div class="m-items">
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #ffd700, #daa520)"
+              >
+                <img
+                  src="urunler/tostlar-kategori/kasarli-bazlama-tost.webp"
+                  alt="kasarli bazlama tost"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Klasik Kaşarlı Tost</div>
+                <div class="m-desc">Jumbo ekmekte kaşar peyniri</div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #ff6347, #ff4500)"
+              >
+                <img
+                  src="urunler/tostlar-kategori/atom-karisik-sanayi-tostu.webp"
+                  alt="atom karisik sanayi tostu"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Karışık Tost</div>
+                <div class="m-desc">Sucuk, salam, sosis, kaşar</div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #daa520, #cd853f)"
+              >
+                <img
+                  src="urunler/tostlar-kategori/kasarli-bazlama-tost.webp"
+                  alt="kasarli bazlama tost"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Kaşarlı Bazlama Tost</div>
+                <div class="m-desc">Bazlama ekmeğinde kaşar</div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #ff8c00, #ff6347)"
+              >
+                <img
+                  src="urunler/sicak-sandvicler/peynirli-tavuk-sandvic.webp"
+                  alt="peynirli tavuk sandvic"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Tavuklu Bazlama Tost</div>
+                <div class="m-desc">Sotelenmiş tavuk, kaşar, bazlama</div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #ff4500, #dc143c)"
+              >
+                <img
+                  src="urunler/tostlar-kategori/ayvalik-tostu.webp"
+                  alt="ayvalik tostu"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Ayvalık Tostu</div>
+                <div class="m-desc">Sucuk, salam, amerikan salata, turşu</div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #f4a460, #d2691e)"
+              >
+                <img
+                  src="urunler/sicak-sandvicler/kumru-sandvic.webp"
+                  alt="kumru sandvic"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Kumru Sandviç</div>
+                <div class="m-desc">Salam, sucuk, kaşar, özel sos</div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #daa520, #cd853f)"
+              >
+                <img
+                  src="urunler/simit-arasi/simit-arasi-kasar.webp"
+                  alt="simit arasi kasar"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Simit Tost Çeşitleri</div>
+                <div class="m-desc">Simit ekmeğinde özel tost</div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #fffacd, #daa520)"
+              >
+                <img
+                  src="urunler/simit-arasi/simit-arasi-nutellali.webp"
+                  alt="simit arasi nutellali"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Simit Arası Lezzet</div>
+                <div class="m-desc">Beyaz peynir & domates veya salam</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Salata -->
+        <div class="m-p" id="p3">
+          <div class="mc-title">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+              />
+            </svg>
+            Salatalar
+          </div>
+          <div class="m-items">
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #32cd32, #228b22)"
+              >
+                <img
+                  src="urunler/salatalar/tavuklu-sezar-salata.webp"
+                  alt="tavuklu sezar salata"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Tavuklu Sezar Salata</div>
+                <div class="m-desc">
+                  Izgara tavuk, parmesan, kroton, sezar sos, mozarella
+                </div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #4682b4, #87ceeb)"
+              >
+                <img
+                  src="urunler/salatalar/ton-balikli-salata.webp"
+                  alt="ton balikli salata"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Ton Balıklı Salata</div>
+                <div class="m-desc">
+                  Mevsim yeşillikleri, ton balığı, domates, salatalık
+                </div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #8fbc8f, #556b2f)"
+              >
+                <img
+                  src="urunler/salatalar/peynirli-coban-salata.webp"
+                  alt="peynirli coban salata"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Ezine Peynirli Salata</div>
+                <div class="m-desc">
+                  Küp domates, salatalık, yeşil biber, ceviz, ezine peyniri,
+                  marul
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gözleme -->
+        <div class="m-p" id="p4">
+          <div class="mc-title">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+              />
+            </svg>
+            Gözlemeler
+          </div>
+          <div class="m-items">
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #ffd700, #daa520)"
+              >
+                <img
+                  src="urunler/gozlemeler/gozleme-1.webp"
+                  alt="gozleme 1"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Patatesli Gözleme</div>
+                <div class="m-desc">Taze patatesli el açması</div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #ff8c00, #ff6347)"
+              >
+                <img
+                  src="urunler/gozlemeler/gozleme-2.webp"
+                  alt="gozleme 2"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Karışık Gözleme</div>
+                <div class="m-desc">Peynir, kaşar, patates karışımı</div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #ffd700, #daa520)"
+              >
+                <img
+                  src="urunler/gozlemeler/gozleme-3.webp"
+                  alt="gozleme 3"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Kaşarlı Gözleme</div>
+                <div class="m-desc">Bol kaşarlı el açması</div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #32cd32, #228b22)"
+              >
+                <img
+                  src="urunler/gozlemeler/gozleme-4.webp"
+                  alt="gozleme 4"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Ispanaklı Soğanlı Gözleme</div>
+                <div class="m-desc">Taze ıspanak ve soğan</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Yemek -->
+        <div class="m-p" id="p5">
+          <div class="mc-title">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+              />
+            </svg>
+            Ana Yemekler
+          </div>
+          <div class="m-items">
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #8b4513, #cd853f)"
+              >
+                <img
+                  src="urunler/kirmizi-etli-lezzetler/tereyagli-soslu-yaprak-kofte.webp"
+                  alt="tereyagli soslu yaprak kofte"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Simitçi'nin Köftesi</div>
+                <div class="m-desc">Izgara köfte, közlenmiş domates, biber</div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #ff8c00, #daa520)"
+              >
+                <img
+                  src="urunler/tavuklu-lezzetler/kori-soslu-tavuk.webp"
+                  alt="kori soslu tavuk"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Köri Soslu Tavuk</div>
+                <div class="m-desc">
+                  Küp tavuk göğsü, dağ kekiği, özel baharat
+                </div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #d2b48c, #8b4513)"
+              >
+                <img
+                  src="urunler/tavuklu-lezzetler/cheddarli-tavuk.webp"
+                  alt="cheddarli tavuk"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Mantar Soslu Tavuk</div>
+                <div class="m-desc">Kültür mantarı, krema, özel baharat</div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #dc143c, #ff6347)"
+              >
+                <img
+                  src="urunler/tavuklu-lezzetler/tavuklu-tirit.webp"
+                  alt="tavuklu tirit"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Barbekü Soslu Tavuk</div>
+                <div class="m-desc">
+                  Kırmızı ve yeşil kapya biber, mantar, barbekü sos, krema
+                </div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #ff4500, #dc143c)"
+              >
+                <img
+                  src="urunler/kirmizi-etli-lezzetler/cokertme-kebabi.webp"
+                  alt="cokertme kebabi"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Tavuk Çökertme</div>
+                <div class="m-desc">
+                  Küp tavuk, renkli biber, sweet chili sos, domates sos,
+                  mozarella, mantar
+                </div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #ff4500, #dc143c)"
+              >
+                <img
+                  src="urunler/makarnalar/penne-arabiatta.webp"
+                  alt="penne arabiatta"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Acılı Domates Soslu Penne</div>
+                <div class="m-desc">Acılı domates sos, pesto, fesleğen</div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #f5deb3, #daa520)"
+              >
+                <img
+                  src="urunler/makarnalar/tavuklu-fettucinni-alfredo.webp"
+                  alt="tavuklu fettucinni alfredo"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Alfredo Soslu Tavuklu Fettuccine</div>
+                <div class="m-desc">
+                  Tavuk bonfile, mantar, krema, pesto sos
+                </div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #f5deb3, #d2b48c)"
+              >
+                <img
+                  src="urunler/mantilar/kayseri-karisik-mantisi.webp"
+                  alt="kayseri karisik mantisi"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Ev Mantısı</div>
+                <div class="m-desc">Yoğurt sos, nane, biber tereyağı</div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #ff8c00, #daa520)"
+              >
+                <img
+                  src="urunler/tantuni/durum-tavuk-tantuni.webp"
+                  alt="durum tavuk tantuni"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Köri Soslu Tavuk Dürüm</div>
+                <div class="m-desc">
+                  Tavuk, köri sos, sebzeler, yanında içecek
+                </div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #dc143c, #ff6347)"
+              >
+                <img
+                  src="urunler/tantuni/ekmek-arasi-tavuk-tantuni.webp"
+                  alt="ekmek arasi tavuk tantuni"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Barbekü Soslu Tavuk Dürüm</div>
+                <div class="m-desc">
+                  Tavuk, barbekü sos, sebzeler, yanında içecek
+                </div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #ff6347, #ff4500)"
+              >
+                <img
+                  src="urunler/tantuni/durum-tavuk-tantuni.webp"
+                  alt="durum tavuk tantuni"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Soslu Tavuklu Dürüm</div>
+                <div class="m-desc">Özel soslu tavuk, sebzeler</div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #8b4513, #cd853f)"
+              >
+                <img
+                  src="urunler/tantuni/durum-et-tantuni.webp"
+                  alt="durum et tantuni"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Izgara Köfte Dürüm</div>
+                <div class="m-desc">
+                  Izgara köfte, kaşar, marul, turşu, domates, patates
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Burger -->
+        <div class="m-p" id="p6">
+          <div class="mc-title">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+              />
+            </svg>
+            Burgerler & Atıştırmalıklar
+          </div>
+          <div class="m-items">
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #ff8c00, #ff6347)"
+              >
+                <img
+                  src="urunler/burger/simitci-citir-tavuk-burger.webp"
+                  alt="simitci citir tavuk burger"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Çıtır Tavuk Burger</div>
+                <div class="m-desc">
+                  Kızarmış çıtır tavuk, kıvırcık marul, domates, kaşar
+                </div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #8b4513, #cd853f)"
+              >
+                <img
+                  src="urunler/burger/simitci-burger.webp"
+                  alt="simitci burger"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Hamburger</div>
+                <div class="m-desc">Beef köfte, karamelize soğan</div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #ffd700, #daa520)"
+              >
+                <img
+                  src="urunler/burger/simitci-cheese-burger.webp"
+                  alt="simitci cheese burger"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Cheeseburger</div>
+                <div class="m-desc">Cheddar peyniri, beef köfte</div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #ffd700, #ff8c00)"
+              >
+                <img
+                  src="urunler/citir-patatesler/citir-parmak-patates.webp"
+                  alt="citir parmak patates"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Patates Sepeti</div>
+                <div class="m-desc">Çıtır parmak patates</div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #dc143c, #ff6347)"
+              >
+                <img
+                  src="urunler/citir-sepetler/citir-sosis-sepeti.webp"
+                  alt="citir sosis sepeti"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Sosis Sepeti</div>
+                <div class="m-desc">Izgara sosis çeşitleri</div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #ff8c00, #ff6347)"
+              >
+                <img
+                  src="urunler/citir-sepetler/citir-tavuk-tenders-sepeti.webp"
+                  alt="citir tavuk tenders sepeti"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Çıtır Tavuk Sepeti</div>
+                <div class="m-desc">Kızarmış tavuk parçaları, sos</div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #ff6347, #ff4500)"
+              >
+                <img
+                  src="urunler/citir-sepetler/citir-tavuk-lokum-sepeti.webp"
+                  alt="citir tavuk lokum sepeti"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Simitçi'nin Atıştırmalık Sepeti</div>
+                <div class="m-desc">Karışık atıştırmalık tabağı</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tatlı -->
+        <div class="m-p" id="p7">
+          <div class="mc-title">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+              />
+            </svg>
+            Tatlılar
+          </div>
+          <div class="m-items">
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #ffb6c1, #db7093)"
+              >
+                <img
+                  src="urunler/tatlilar/frambuazli-pasta.webp"
+                  alt="frambuazli pasta"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Vitrin Pastaları (Adet)</div>
+                <div class="m-desc">Günün taze pastası</div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #d2b48c, #8b4513)"
+              >
+                <img
+                  src="urunler/tatlilar/lattepasta.webp"
+                  alt="lattepasta"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Latte Pasta</div>
+                <div class="m-desc">Kahveli, kremalı pasta</div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #fff8e7, #f5deb3)"
+              >
+                <img
+                  src="urunler/tatlilar/devils.webp"
+                  alt="devils"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Fırın Sütlaç</div>
+                <div class="m-desc">Geleneksel fırın sütlaç</div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #daa520, #cd853f)"
+              >
+                <img
+                  src="urunler/tatlilar/waffle.webp"
+                  alt="waffle"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Waffle</div>
+                <div class="m-desc">Dondurmalı, meyveli, çikolatalı</div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #f5deb3, #d2b48c)"
+              >
+                <img
+                  src="urunler/tatlilar/tiramisu.webp"
+                  alt="tiramisu"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Trileçe</div>
+                <div class="m-desc">Süt soslu, karamelize üstlü</div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #8b4513, #a0522d)"
+              >
+                <img
+                  src="urunler/tatlilar/cikolatali-mono-pasta.webp"
+                  alt="cikolatali mono pasta"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Sufle</div>
+                <div class="m-desc">Sıcak servis, dondurma ile</div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #daa520, #cd853f)"
+              >
+                <img
+                  src="urunler/kurabiyeler/cikolatali-cookie.webp"
+                  alt="cikolatali cookie"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Tatlı & Tuzlu Kuru Pasta</div>
+                <div class="m-desc">Çeşitli kurabiyeler</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sıcak İçecek -->
+        <div class="m-p" id="p8">
+          <div class="mc-title">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+              />
+            </svg>
+            Sıcak İçecekler
+          </div>
+          <div class="m-items">
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #228b22, #32cd32)"
+              >
+                <img
+                  src="urunler/icecekler/cayy.webp"
+                  alt="cayy"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Demleme Çay (Cam Bardak)</div>
+                <div class="m-desc">Taze demlenmiş, tavşan kanı</div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #3d2b1f, #5c3a1e)"
+              >
+                <img
+                  src="urunler/icecekler/turk-kahvesi.webp"
+                  alt="turk kahvesi"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Türk Kahvesi</div>
+                <div class="m-desc">Klasik, köpüklü</div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #1a0a00, #3d2b1f)"
+              >
+                <img
+                  src="urunler/icecekler/americano.webp"
+                  alt="americano"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Espresso</div>
+                <div class="m-desc">Taze çekilmiş kahve</div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #d2b48c, #8b4513)"
+              >
+                <img
+                  src="urunler/icecekler/caffelatte.webp"
+                  alt="caffelatte"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Caffe Latte</div>
+                <div class="m-desc">Espresso, bol süt</div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #f5deb3, #d2b48c)"
+              >
+                <img
+                  src="urunler/icecekler/cappuccino.webp"
+                  alt="cappuccino"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Cappuccino</div>
+                <div class="m-desc">Espresso, buharlı süt, köpük</div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #6f4e37, #8b4513)"
+              >
+                <img
+                  src="urunler/icecekler/dibek-kahvesi.webp"
+                  alt="dibek kahvesi"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Filtre Kahve</div>
+                <div class="m-desc">Günlük taze filtre</div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #fff8e7, #f5deb3)"
+              >
+                <img
+                  src="urunler/icecekler/turk-kahvesi.webp"
+                  alt="turk kahvesi"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Salep</div>
+                <div class="m-desc">Tarçınlı, sıcak salep</div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #1a0a00, #3d2b1f)"
+              >
+                <img
+                  src="urunler/icecekler/americano.webp"
+                  alt="americano"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Americano</div>
+                <div class="m-desc">Espresso, sıcak su</div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #c49a6c, #8b6914)"
+              >
+                <img
+                  src="urunler/icecekler/karamel-macchiato.webp"
+                  alt="karamel macchiato"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Karamel Macchiato</div>
+                <div class="m-desc">Espresso, buharlı süt, karamel sos</div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #c41e3a, #8b0000)"
+              >
+                <img
+                  src="urunler/icecekler/damla-sakizli-turk-kahvesi.webp"
+                  alt="damla sakizli turk kahvesi"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Damla Sakızlı Türk Kahvesi</div>
+                <div class="m-desc">Ege usulü, damla sakızlı</div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #5c3a1e, #3d2b1f)"
+              >
+                <img
+                  src="urunler/icecekler/dibek-kahvesi.webp"
+                  alt="dibek kahvesi"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Dibek Kahvesi</div>
+                <div class="m-desc">Geleneksel dibekte dövülmüş</div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #8b4513, #cd853f)"
+              >
+                <img
+                  src="urunler/icecekler/elma-ve-tarcinli-siyah-cay.webp"
+                  alt="elma ve tarcinli siyah cay"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Elma & Tarçınlı Siyah Çay</div>
+                <div class="m-desc">Kışın vazgeçilmezi</div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #daa520, #ffd700)"
+              >
+                <img
+                  src="urunler/icecekler/karisik-ihlamur-cayi.webp"
+                  alt="karisik ihlalur cayi"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Karışık Ihlamur Çayı</div>
+                <div class="m-desc">Nane, ıhlamur, zencefil</div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #ff6347, #ff4500)"
+              >
+                <img
+                  src="urunler/icecekler/karisik-meyve-cayi.webp"
+                  alt="karisik meyve cay"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Karışık Meyve Çayı</div>
+                <div class="m-desc">Orman meyveli, doğal</div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #dc143c, #ff1493)"
+              >
+                <img
+                  src="urunler/icecekler/meyveli-roolbos-cayi.webp"
+                  alt="meyveli rooibos cay"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Meyveli Rooibos Çayı</div>
+                <div class="m-desc">Kafeinsiz, antioksidan dolu</div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #6b8e23, #228b22)"
+              >
+                <img
+                  src="urunler/icecekler/yaseminli-yesil-cay.webp"
+                  alt="yaseminli yesil cay"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Yaseminli Yeşil Çay</div>
+                <div class="m-desc">Ferahlatan, antioksidan zengini</div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #d2691e, #8b4513)"
+              >
+                <img
+                  src="urunler/icecekler/zencefilli-karisik-bitki-cayi.webp"
+                  alt="zencefilli karisik bitki cay"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Zencefilli Karışık Bitki Çayı</div>
+                <div class="m-desc">Zencefil, tarçın, karanfil, doğal bal</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Soğuk İçecek -->
+        <div class="m-p" id="p9">
+          <div class="mc-title">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+              />
+            </svg>
+            Soğuk İçecekler
+          </div>
+          <div class="m-items">
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #d2b48c, #87ceeb)"
+              >
+                <img
+                  src="urunler/soguk-icecekler/ice-caramel-macchiato.webp"
+                  alt="ice caramel macchiato"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Ice Latte</div>
+                <div class="m-desc">Buzlu latte</div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #dc143c, #ff1493)"
+              >
+                <img
+                  src="urunler/soguk-icecekler/berry-hibiscus.webp"
+                  alt="berry hibiscus"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Berry Hibiscus</div>
+                <div class="m-desc">Orman meyveli, hibiscus çiçeği</div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #32cd32, #00fa9a)"
+              >
+                <img
+                  src="urunler/soguk-icecekler/brezilya-limonatasi.webp"
+                  alt="brezilya limonata"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Brezilya Limonata</div>
+                <div class="m-desc">Taze lime, yoğurt, buz</div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #ff69b4, #ff1493)"
+              >
+                <img
+                  src="urunler/soguk-icecekler/cilekli-limonata.webp"
+                  alt="cilekli limonata"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Çilekli Limonata</div>
+                <div class="m-desc">Taze çilek, limon, buz</div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #228b22, #adff2f)"
+              >
+                <img
+                  src="urunler/soguk-icecekler/cool-lime.webp"
+                  alt="cool lime"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Cool Lime</div>
+                <div class="m-desc">Serinleten lime aroması</div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #9acd32, #6b8e23)"
+              >
+                <img
+                  src="urunler/soguk-icecekler/elma-suyu.webp"
+                  alt="elma suyu"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Elma Suyu</div>
+                <div class="m-desc">Taze sıkılmış elma</div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #ff8c00, #ff6347)"
+              >
+                <img
+                  src="urunler/soguk-icecekler/havuc-suyu.webp"
+                  alt="havuc suyu"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Havuç Suyu</div>
+                <div class="m-desc">Taze havuç, portakal</div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #4682b4, #87ceeb)"
+              >
+                <img
+                  src="urunler/soguk-icecekler/ice-americano.webp"
+                  alt="ice americano"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Ice Americano</div>
+                <div class="m-desc">Buzlu espresso, soğuk su</div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #6f4e37, #8b4513)"
+              >
+                <img
+                  src="urunler/soguk-icecekler/kahveli-limonata.webp"
+                  alt="kahveli limonata"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Kahveli Limonata</div>
+                <div class="m-desc">Espresso, taze limon, buz</div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #ff6347, #ff4500)"
+              >
+                <img
+                  src="urunler/soguk-icecekler/karpuz-smoothie.webp"
+                  alt="karpuz smoothie"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Karpuz Smoothie</div>
+                <div class="m-desc">Taze karpuz, buz parçacıkları</div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #9acd32, #32cd32)"
+              >
+                <img
+                  src="urunler/soguk-icecekler/kivi.webp"
+                  alt="kivi"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Kivi</div>
+                <div class="m-desc">Taze kivi, buz, nane</div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #90ee90, #32cd32)"
+              >
+                <img
+                  src="urunler/soguk-icecekler/naneli-limonata.webp"
+                  alt="naneli limonata"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Naneli Limonata</div>
+                <div class="m-desc">Fesleğen, nane, limon</div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #dc143c, #8b0000)"
+              >
+                <img
+                  src="urunler/soguk-icecekler/nar-suyu.webp"
+                  alt="nar suyu"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Nar Suyu</div>
+                <div class="m-desc">Taze nar, doğal antioksidan</div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #ffa500, #ff8c00)"
+              >
+                <img
+                  src="urunler/soguk-icecekler/portakal-suyu.webp"
+                  alt="portakal suyu"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Portakal Suyu</div>
+                <div class="m-desc">Taze sıkılmış portakal</div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #4169e1, #1e90ff)"
+              >
+                <img
+                  src="urunler/soguk-icecekler/yaban-mersinli-limonata.webp"
+                  alt="yaban mersinli limonata"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Yaban Mersinli Limonata</div>
+                <div class="m-desc">Yaban mersini, limon, buz</div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #4a3728, #87ceeb)"
+              >
+                <img
+                  src="urunler/soguk-icecekler/ice-americano.webp"
+                  alt="ice americano"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Soğuk Kahve Çeşitleri</div>
+                <div class="m-desc">Buzlu kahve seçenekleri</div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #fffacd, #adff2f)"
+              >
+                <img
+                  src="urunler/soguk-icecekler/limonata.webp"
+                  alt="limonata"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Ev Yapımı Limonata</div>
+                <div class="m-desc">Çilekli ve naneli seçenekler</div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #f0f8ff, #e6e6fa)"
+              >
+                <img
+                  src="urunler/icecekler/ayran.webp"
+                  alt="ayran"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Ayran</div>
+                <div class="m-desc">Küçük / Büyük</div>
+              </div>
+            </div>
+            <div class="m-it rev" onclick="openMenuModal(this)">
+              <div
+                class="m-visual"
+                style="background: linear-gradient(135deg, #ff0000, #ff4500)"
+              >
+                <img
+                  src="urunler/soguk-icecekler/portakal-suyu.webp"
+                  alt="portakal suyu"
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-info">
+                <div class="m-name">Kutu İçecekler</div>
+                <div class="m-desc">Cola, Fanta, Sprite, Fuse Tea</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="brand">
+        <img
+          src="logo.png"
+          alt="Logo"
+          width="28"
+          height="18"
+          style="height: 28px; width: auto"
+        />Simitçi Dünyası Ulus
+      </div>
+      <p>Simitçi Dünyası Ulus - Tüm Hakları Saklıdır.</p>
+      <div class="f-links">
+        <a href="index.html">Anasayfa</a>
+        <a href="menu.html">Menü</a>
+        <a href="index.html#c">İletişim</a>
+      </div>
+    </footer>
+
+    <div id="menuModal" class="menu-modal" onclick="closeMenuModal()">
+      <div class="menu-modal-content" onclick="event.stopPropagation()">
+        <span class="menu-modal-close" onclick="closeMenuModal()">&times;</span>
+        <div class="menu-modal-img"><img id="mmImg" src="" alt="" /></div>
+        <div class="menu-modal-info">
+          <h3 id="mmName"></h3>
+          <p id="mmDesc"></p>
+        </div>
+      </div>
+    </div>
+
+    <a
+      href="https://wa.me/905312700234"
+      target="_blank"
+      rel="noopener"
+      class="wbtn"
+      title="WhatsApp"
+    >
+      <svg viewBox="0 0 24 24">
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+        />
+      </svg>
+    </a>
+
+    <script>
+      function tg() {
+        document.getElementById("nl").classList.toggle("a");
+      }
+      document
+        .querySelectorAll("#nl a")
+        .forEach((l) =>
+          l.addEventListener("click", () =>
+            document.getElementById("nl").classList.remove("a"),
+          ),
+        );
+      function sp(i) {
+        document
+          .querySelectorAll(".m-tab")
+          .forEach((t, j) => t.classList.toggle("on", j === i));
+        document
+          .querySelectorAll(".m-p")
+          .forEach((p, j) => p.classList.toggle("on", j === i));
+      }
+      function openMenuModal(el) {
+        const imgEl = el.querySelector(".m-visual img");
+        const nameEl = el.querySelector(".m-name");
+        const descEl = el.querySelector(".m-desc");
+        document.getElementById("mmImg").src = imgEl ? imgEl.src : "";
+        document.getElementById("mmImg").alt = imgEl ? imgEl.alt : "";
+        document.getElementById("mmName").textContent = nameEl
+          ? nameEl.textContent
+          : "";
+        document.getElementById("mmDesc").textContent = descEl
+          ? descEl.textContent
+          : "";
+        document.getElementById("menuModal").classList.add("on");
+        document.body.style.overflow = "hidden";
+      }
+      function closeMenuModal() {
+        document.getElementById("menuModal").classList.remove("on");
+        document.body.style.overflow = "";
+      }
+      const obs = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry, index) => {
+            if (entry.isIntersecting) {
+              setTimeout(() => entry.target.classList.add("on"), index * 60);
+            }
+          });
+        },
+        { threshold: 0.1 },
+      );
+      document.querySelectorAll(".rev").forEach((r) => obs.observe(r));
+    </script>
+  </body>
+</html>
