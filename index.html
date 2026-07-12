@@ -1437,67 +1437,6 @@
         .hero-title span {
           font-size: 1.4rem;
         }
-         .ticker-bar {
-        position: relative;
-        background: linear-gradient(90deg, var(--brown-dark), var(--brown));
-        border-top: 2px solid var(--gold);
-        border-bottom: 2px solid var(--gold);
-        overflow: hidden;
-        padding: 12px 0;
-        white-space: nowrap;
-      }
-      .ticker-track {
-        display: inline-flex;
-        align-items: center;
-        gap: 2.5rem;
-        animation: ticker-scroll 32s linear infinite;
-        will-change: transform;
-      }
-      .ticker-bar:hover .ticker-track {
-        animation-play-state: paused;
-      }
-      .ticker-item {
-        display: inline-flex;
-        align-items: center;
-        gap: 10px;
-        font-size: 1rem;
-        font-weight: 600;
-        color: var(--gold-light);
-        letter-spacing: 0.5px;
-        flex-shrink: 0;
-      }
-      .ticker-item svg {
-        width: 18px;
-        height: 18px;
-        fill: var(--gold);
-        flex-shrink: 0;
-      }
-      .ticker-item .hl {
-        color: #fff;
-      }
-      .ticker-sep {
-        color: var(--gold);
-        opacity: 0.5;
-        font-size: 1.1rem;
-        flex-shrink: 0;
-      }
-      @keyframes ticker-scroll {
-        0% {
-          transform: translateX(0);
-        }
-        100% {
-          transform: translateX(-50%);
-        }
-      }
-      @media (max-width: 768px) {
-        .ticker-item {
-          font-size: 0.88rem;
-        }
-        .ticker-track {
-          gap: 1.5rem;
-          animation-duration: 22s;
-        }
-      }
     </style>
     <base target="_blank" />
   <base target="_blank">
