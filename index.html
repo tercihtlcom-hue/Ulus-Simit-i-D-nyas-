@@ -1433,6 +1433,67 @@
         .hero-title span {
           font-size: 1.4rem;
         }
+         .ticker-bar {
+        position: relative;
+        background: linear-gradient(90deg, var(--brown-dark), var(--brown));
+        border-top: 2px solid var(--gold);
+        border-bottom: 2px solid var(--gold);
+        overflow: hidden;
+        padding: 12px 0;
+        white-space: nowrap;
+      }
+      .ticker-track {
+        display: inline-flex;
+        align-items: center;
+        gap: 2.5rem;
+        animation: ticker-scroll 32s linear infinite;
+        will-change: transform;
+      }
+      .ticker-bar:hover .ticker-track {
+        animation-play-state: paused;
+      }
+      .ticker-item {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 1rem;
+        font-weight: 600;
+        color: var(--gold-light);
+        letter-spacing: 0.5px;
+        flex-shrink: 0;
+      }
+      .ticker-item svg {
+        width: 18px;
+        height: 18px;
+        fill: var(--gold);
+        flex-shrink: 0;
+      }
+      .ticker-item .hl {
+        color: #fff;
+      }
+      .ticker-sep {
+        color: var(--gold);
+        opacity: 0.5;
+        font-size: 1.1rem;
+        flex-shrink: 0;
+      }
+      @keyframes ticker-scroll {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+      @media (max-width: 768px) {
+        .ticker-item {
+          font-size: 0.88rem;
+        }
+        .ticker-track {
+          gap: 1.5rem;
+          animation-duration: 22s;
+        }
+      }
       }
     </style>
     <base target="_blank" />
@@ -1519,6 +1580,33 @@
           /></svg
       ></a>
     </section>
+    <div class="ticker-bar" role="marquee" aria-label="Kabul edilen yemek kartları ve güncel duyuru">
+  <div class="ticker-track">
+    <!-- İçerik bir kez yazılır, JS ile otomatik ikiye katlanır (kesintisiz kayma için) -->
+    <span class="ticker-item">
+      <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/></svg>
+      Artık tüm yemek kartlarını kabul ediyoruz:
+    </span>
+    <span class="ticker-sep">•</span>
+    <span class="ticker-item"><span class="hl">Pluxee (Sodexo)</span></span>
+    <span class="ticker-sep">•</span>
+    <span class="ticker-item"><span class="hl">Ticket Restaurant (Edenred)</span></span>
+    <span class="ticker-sep">•</span>
+    <span class="ticker-item"><span class="hl">Multinet Up</span></span>
+    <span class="ticker-sep">•</span>
+    <span class="ticker-item"><span class="hl">Setcard</span></span>
+    <span class="ticker-sep">•</span>
+    <span class="ticker-item"><span class="hl">MetropolCard</span></span>
+    <span class="ticker-sep">•</span>
+    <span class="ticker-item"><span class="hl">TokenFlex</span></span>
+    <span class="ticker-sep">•</span>
+    <span class="ticker-item">
+      <svg viewBox="0 0 24 24"><path d="M12 2C8.5 2 5.5 4 4 7c-1.5 3-1 6.5 1 9l7 6 7-6c2-2.5 2.5-6 1-9-1.5-3-4.5-5-8-5z"/></svg>
+      Yeni! <span class="hl">Maraş Dondurması</span> artık menümüzde
+    </span>
+    <span class="ticker-sep">•</span>
+  </div>
+</div>
 
     <section class="offer" id="o">
       <div class="cont">
@@ -2039,6 +2127,22 @@
                       loading="lazy"
                     />
                   </div>
+                  div class="m-it rev" onclick="openMenuModal(this)">
+  <div
+    class="m-visual"
+    style="background: linear-gradient(135deg, #f5deb3, #d2691e);"
+  >
+    <img
+      src="urunler/tatlilar/maras-dondurmasi.webp"
+      alt="maras dondurmasi"
+      loading="lazy"
+    />
+  </div>
+  <div class="m-info">
+    <div class="m-name">Maraş Dondurması</div>
+    <div class="m-desc">Keçi sütü ve sahlepten, dövme usulü, kaymaklı kıvamda</div>
+  </div>
+</div>
                   <div class="m-info">
                     <div class="m-name">Sade Simit / Ankara Simidi</div>
                     <div class="m-desc">Geleneksel, çıtır ve bol susamlı</div>
@@ -4493,6 +4597,12 @@
         { threshold: 0.1 },
       );
       document.querySelectorAll(".rev").forEach((r) => obs.observe(r));
+      <script>
+      // Ticker'ı kesintisiz kaydırmak için içeriği bir kez klonluyoruz
+      document.querySelectorAll(".ticker-track").forEach((track) => {
+        track.innerHTML += track.innerHTML;
+      });
+</script>
     </script>
   </body>
 </html>
