@@ -1339,6 +1339,86 @@
         font-size: 1rem;
         color: #555;
       }
+      .payment {
+        background: linear-gradient(180deg, var(--cream), #fff 50%, var(--cream));
+        padding: 90px 20px;
+      }
+      .payment-g {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 2rem;
+        max-width: 1300px;
+        margin: 0 auto;
+      }
+      .p-card {
+        background: var(--white);
+        border-radius: 24px;
+        padding: 2.5rem 2rem;
+        text-align: center;
+        box-shadow: 0 15px 45px rgba(0,0,0,0.08);
+        border: 2px solid transparent;
+        transition: all 0.4s ease;
+        position: relative;
+        overflow: hidden;
+      }
+      .p-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background: linear-gradient(90deg, var(--gold), var(--red));
+      }
+      .p-card:hover {
+        transform: translateY(-12px) scale(1.03);
+        border-color: var(--gold);
+        box-shadow: 0 25px 60px rgba(212, 168, 75, 0.2);
+      }
+      .p-icon {
+        width: 80px;
+        height: 80px;
+        background: linear-gradient(135deg, var(--gold-light), var(--gold));
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 1.5rem;
+        font-family: "Playfair Display", serif;
+        font-size: 1.8rem;
+        font-weight: 800;
+        color: var(--brown);
+        box-shadow: 0 10px 30px rgba(212, 168, 75, 0.3);
+      }
+      .p-card h3 {
+        font-family: "Playfair Display", serif;
+        font-size: 1.4rem;
+        color: var(--brown);
+        margin-bottom: 0.3rem;
+      }
+      .p-card .p-sub {
+        font-size: 0.9rem;
+        color: var(--gold-dark);
+        font-weight: 600;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-bottom: 1.2rem;
+      }
+      .p-news {
+        background: linear-gradient(135deg, rgba(212,168,75,0.08), rgba(196,30,58,0.05));
+        border-radius: 16px;
+        padding: 1.2rem;
+        margin-top: 1rem;
+        text-align: left;
+        border-left: 3px solid var(--gold);
+      }
+      .p-news p {
+        font-size: 0.92rem;
+        color: #555;
+        line-height: 1.7;
+        margin: 0;
+        font-style: italic;
+      }
       @media (max-width: 992px) {
         .about-g,
         .offer-g {
@@ -1413,6 +1493,7 @@
         .menu-modal-img {
           height: 220px;
         }
+        .payment-g { grid-template-columns: 1fr; max-width: 500px; margin: 0 auto; }
       }
       @media (max-width: 480px) {
         .about-st {
@@ -4330,6 +4411,68 @@
                 d="M16.75 13.96c.25.13.41.2.46.3.06.11.04.61-.21 1.18-.2.56-1.24 1.1-1.7 1.24-.49.15-.85.08-2.3-.62-1.68-.77-2.74-2.78-2.82-2.91-.08-.13-.67-1.35-.03-2.53.36-.67.86-1.2 1.12-1.35.28-.16.56-.07.72.1.2.22.42.73.54.95.12.22.08.44-.02.6-.06.1-.16.22-.27.35l-.12.15c-.08.1-.17.2-.22.32-.06.14 0 .27.04.36.12.25.62 1.09 1.32 1.57.9.62 1.22.7 1.49.59.2-.08.35-.18.5-.33.1-.1.23-.26.36-.43.1-.14.2-.27.3-.37.14-.15.36-.2.56-.1z"
               /></svg
           ></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="payment" id="payment">
+      <div class="cont">
+        <div class="sec-h rev">
+          <span class="sec-label">
+            <svg viewBox="0 0 24 24" style="width:16px;height:16px;fill:var(--gold-dark)"><path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/></svg>
+            Ödeme Yöntemleri
+          </span>
+          <h2 class="sec-title">Yemek Kartları Kabul Edilir</h2>
+          <div class="sec-div"></div>
+          <p class="sec-sub">Tüm yemek kartlarınızla kolay ve güvenli ödeme yapabilirsiniz.</p>
+        </div>
+        <div class="payment-g">
+          
+          <div class="p-card rev">
+            <div class="p-icon">P</div>
+            <h3>Pluxee</h3>
+            <div class="p-sub">Eski Sodexo</div>
+            <div class="p-news">
+              <p>Pluxee (Sodexo) yemek kartınızla tüm şubelerimizde ödeme yapabilirsiniz. Günlük limitler dahilinde geçerli olup, kahvaltı ve ana yemeklerde aktiftir.</p>
+            </div>
+          </div>
+
+          <div class="p-card rev">
+            <div class="p-icon">T</div>
+            <h3>Ticket Restaurant</h3>
+            <div class="p-sub">Edenred</div>
+            <div class="p-news">
+              <p>Edenred Ticket Restaurant kartınızla kahvaltıdan akşam yemeğine kadar tüm lezzetlerimizi deneyebilirsiniz. Hızlı ve pratik ödeme imkanı sunar.</p>
+            </div>
+          </div>
+
+          <div class="p-card rev">
+            <div class="p-icon">M</div>
+            <h3>Multinet Up</h3>
+            <div class="p-sub">Yemek Kartı</div>
+            <div class="p-news">
+              <p>Multinet Up avantajlarıyla Simitçi Dünyası'nda ödeme yapın. Yemek ve içecek kategorilerinde geçerli, temassız POS desteği mevcuttur.</p>
+            </div>
+          </div>
+
+          <div class="p-card rev">
+            <div class="p-icon">S</div>
+            <h3>Setcard</h3>
+            <div class="p-sub">Setur</div>
+            <div class="p-news">
+              <p>Setcard yemek ödeme kartınızı kullanarak hızlı işlem yapabilirsiniz. Tüm menü kategorilerinde aktif olup, günlük bakiye ile çalışır.</p>
+            </div>
+          </div>
+
+          <div class="p-card rev">
+            <div class="p-icon">Mc</div>
+            <h3>MetropolCard</h3>
+            <div class="p-sub">MultiNet</div>
+            <div class="p-news">
+              <p>MetropolCard ile Ulus Meydanı'ndaki lezzet durağımızda tüm ödemelerinizi güvenle gerçekleştirebilirsiniz. Kartınızı POS cihazlarımızda kullanabilirsiniz.</p>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
