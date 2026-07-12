@@ -4597,10 +4597,6 @@
         { threshold: 0.1 },
       );
       document.querySelectorAll(".rev").forEach((r) => obs.observe(r));
-      // Ticker'ı kesintisiz kaydırmak için içeriği bir kez klonluyoruz
-      document.querySelectorAll(".ticker-track").forEach((track) => {
-        track.innerHTML += track.innerHTML;
-      });
     </script>
   </body>
 </html>
